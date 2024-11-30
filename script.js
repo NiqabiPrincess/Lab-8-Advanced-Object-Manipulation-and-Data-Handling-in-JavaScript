@@ -10,3 +10,6 @@ let student = {
         console.log(`Courses: ${this.courses}`);
     }
 }
+
+console.log(`Student First Name: ${student.firstName}. Student Age: ${student.age}`);
+student.displayInfo()
