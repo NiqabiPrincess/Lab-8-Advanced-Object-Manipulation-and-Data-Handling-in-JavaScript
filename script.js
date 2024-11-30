@@ -28,3 +28,6 @@ console.log(jsonStudentObj);
 console.log('------------------------------------------------');
 console.log("JavaScript object: ")
 console.log(student);
+
+console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++');
+
