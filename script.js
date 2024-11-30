@@ -31,3 +31,12 @@ console.log(student);
 
 console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++');
 
+const { firstName, courses} = student;
+console.log(`Name: ${firstName}`);
+console.log(`Courses: ${courses}`);
+console.log('------------------------------------------------');
+
+let scores = [97.5, 80, 95, 99, 100];
+console.log(`Original Scores: ${scores}`);
+const [a,b] = scores;
+console.log(`Deconstructed Scores: ${a}, ${b}`);
