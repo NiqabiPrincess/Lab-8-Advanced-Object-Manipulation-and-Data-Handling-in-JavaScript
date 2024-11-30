@@ -40,3 +40,10 @@ let scores = [97.5, 80, 95, 99, 100];
 console.log(`Original Scores: ${scores}`);
 const [a,b] = scores;
 console.log(`Deconstructed Scores: ${a}, ${b}`);
+
+
+console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++');
+
+let studentCopy = { ...student};
+studentCopy.gradYear = 2020;
+console.log(`Graduation Year: ${studentCopy.gradYear}`);
