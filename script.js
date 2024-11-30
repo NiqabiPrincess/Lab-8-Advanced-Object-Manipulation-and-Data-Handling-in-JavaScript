@@ -47,3 +47,9 @@ console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++');
 let studentCopy = { ...student};
 studentCopy.gradYear = 2020;
 console.log(`Graduation Year: ${studentCopy.gradYear}`);
+
+console.log('------------------------------------------------');
+
+let moreCourses = ['cooking', 'knitting', 'ancient history'];
+let allCourses = [...courses, ...moreCourses];
+console.log(`More Courses Have Been Added: ${allCourses} `)
