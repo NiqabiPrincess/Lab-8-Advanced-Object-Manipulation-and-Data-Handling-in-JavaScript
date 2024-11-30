@@ -78,6 +78,6 @@ function getSum(total, n){
 }
 
 let scoresSum = scores.reduce(getSum, 0);
+let scoresAvg = scoresSum / scores.length;
 
-
-console.log(`Scores Sum: ${scoresSum}`);
+console.log(`Scores Average: ${scoresAvg}`);
