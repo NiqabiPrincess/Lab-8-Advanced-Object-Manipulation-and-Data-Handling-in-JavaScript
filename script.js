@@ -3,11 +3,18 @@ let student = {
     age: 22,
     enrolled: true,
     courses: ['algorithms', 'databases', 'WRIT120', 'operating systems', 'web dev', 'JavaScript'],
-    displayInfo : function (){
+    displayInfo: function (){
         console.log(`Name: ${this.firstName}`);
         console.log(`Age: ${this.age}`);
         console.log(`Enrolled: ${this.enrolled}`);
         console.log(`Courses: ${this.courses}`);
+    },
+    addCourse: function(c){
+        this.courses.push(c);
+    }, 
+    totalCourses: function() {
+        l = this.courses.length;
+        return (`Total Number of Courses ${l}`);
     }
 }
 
@@ -53,3 +60,12 @@ console.log('------------------------------------------------');
 let moreCourses = ['cooking', 'knitting', 'ancient history'];
 let allCourses = [...courses, ...moreCourses];
 console.log(`More Courses Have Been Added: ${allCourses} `)
+
+
+console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++');
+console.log(student.courses);
+console.log(student.totalCourses());
+console.log('------------------------------------------------');
+console.log(student.addCourse('art'));
+console.log(student.courses);
+console.log(student.totalCourses());
