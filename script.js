@@ -69,3 +69,15 @@ console.log('------------------------------------------------');
 console.log(student.addCourse('art'));
 console.log(student.courses);
 console.log(student.totalCourses());
+
+
+console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++');
+
+function getSum(total, n){
+    return total + Math.round(n);
+}
+
+let scoresSum = scores.reduce(getSum, 0);
+
+
+console.log(`Scores Sum: ${scoresSum}`);
