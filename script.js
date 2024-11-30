@@ -13,3 +13,8 @@ let student = {
 
 console.log(`Student First Name: ${student.firstName}. Student Age: ${student.age}`);
 student.displayInfo()
+
+console.log('------------------------------------------------');
+
+let jsonStudent = JSON.stringify(student);
+console.log(jsonStudent);
