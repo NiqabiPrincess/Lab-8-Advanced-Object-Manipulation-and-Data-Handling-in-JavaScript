@@ -14,7 +14,17 @@ let student = {
 console.log(`Student First Name: ${student.firstName}. Student Age: ${student.age}`);
 student.displayInfo()
 
+console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++');
+
+let jsonStudentString = JSON.stringify(student);
+console.log("JSON String: ");
+console.log(jsonStudentString);
+
 console.log('------------------------------------------------');
 
-let jsonStudent = JSON.stringify(student);
-console.log(jsonStudent);
+let jsonStudentObj = JSON.parse(jsonStudentString);
+console.log("JSON object: ")
+console.log(jsonStudentObj);
+console.log('------------------------------------------------');
+console.log("JavaScript object: ")
+console.log(student);
